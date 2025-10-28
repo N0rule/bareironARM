@@ -1,7 +1,18 @@
-# bareiron
-Minimalist Minecraft server for memory-restrictive embedded systems.
+# bareironARM
 
-The goal of this project is to enable hosting Minecraft servers on very weak devices, such as the ESP32. The project's priorities are, in order: **memory usage**, **performance**, and **features**. Because of this, compliance with vanilla Minecraft is not guaranteed, nor is it a goal of the project.
+**ARM-optimized fork of [bareiron](https://github.com/p2r3/bareiron) by [p2r3](https://github.com/p2r3)**
+
+Minimalist Minecraft server for memory-restrictive embedded systems, optimized for ARM TV boxes and single-board computers.
+
+This is a mirror/duplicate of the original bareiron project, optimized specifically for AArch64/ARM platforms. All credit for the original implementation goes to p2r3.
+
+## Original Project
+
+- **Original Repository**: https://github.com/p2r3/bareiron
+- **Author**: p2r3 (PortalRunner)
+- **License**: GPL-3.0
+
+
 
 - Minecraft version: `1.21.8`
 - Protocol version: `772`
