@@ -41,5 +41,13 @@ for arg in "$@"; do
 done
 
 rm -f "bareiron$exe"
-$compiler src/*.c -O2 -Iinclude -o "bareiron$exe" $windows_linker
+
+# Add -static flag for Linux builds to create statically linked binary
+if [[ "$unameOut" != MINGW64_NT* ]]; then
+  echo "Building statically linked binary for Linux..."
+  $compiler src/*.c -O2 -Iinclude -static -o "bareiron$exe"
+else
+  $compiler src/*.c -O2 -Iinclude -o "bareiron$exe" $windows_linker
+fi
+
 "./bareiron$exe"
