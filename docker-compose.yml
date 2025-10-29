@@ -5,7 +5,7 @@ services:
     ports:
       - "25565:25565"
     volumes:
-      - ./world.bin:/app/world.bin:rw
+      - ./:/app:rw
     restart: unless-stopped
     stdin_open: true
     tty: true
