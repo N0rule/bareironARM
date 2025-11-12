@@ -10,8 +10,3 @@ services:
     stdin_open: true
     tty: true
     network_mode: bridge
-    labels:
-      - homepage.group=Docker
-      - homepage.name=Minecraft Bareiron Server
-      - homepage.icon=minecraft.png
-      - homepage.description=Minimalist Minecraft Server (1.21.8)
